@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+  font-family: 'Montserrat', 'sans-serif' , Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li,a{
+  text-decoration: none;
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  background-color: rgb(72, 72, 207);
+  /* background-color: rgb(86, 177, 68); */
+  padding: 5px 0px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+header ul li{
+  padding: 2px 25px;
+  display: inline-block;
+  list-style: none;
+}
+
+.header-list-item a{
+  color: white;
+  font-size: 19px ;
+}
+
+#hamburger-icon{
+  display: none;
+  height: 25px;
+  width: 30px;
+  margin-right: 10px;
+  background-color: black;
+}
+
+#logo{
+  width: 400px;
+  height: 81px;
+}
+
+.navbar{
+  background-color: rgb(130, 190, 118); 
+  overflow: hidden;
+}
+hr{
+  border: 1px solid #797171; 
+  margin: 0px 20px;
+}
+
+.navbar-logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px;
+}
+input[type=text]{
+  padding: 4px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid black ;
+  color: black;
+  font-size: 18px;
+}
+
+::placeholder{
+  color: black;
+  opacity: 1;
+}
+
+.navbar-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 12px 40px;
+  font-weight: bold;
+}
+.navbar-list li a{
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.navbar-panel-list{
+  display: flex;
+  padding: 10px;
+  color: #000000;
+  /* background-color: rgba(16, 22, 8, 0.2); */
+}
+
+.navbar-panel-list-items{
+  font-size: large;
+  font-weight: bold;
+  line-height: 1.7em;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(36, 32, 32);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#privacy-policy{
+  margin: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .icons-tab{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;    
+} */
+
+.fa-brands{
+  color: white;
+  /* padding: 5px; */
+  margin: 6px;
+  font-size: 20px;
 }
+.fa-brands:hover{
+  color: royalblue;
+}
+
+.squiggles{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+  margin: 5px 20px;
+  padding: 20px; 
+  border-radius: 10px;
+  background-color:rgb(221, 221, 79); 
+}
+#squiggle-button{
+  padding:10px; 
+  color: white;
+  font-size: 16px;
+  background-color: #e15b62;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#squiggle-items{
+  display: flex; 
+  flex-direction:column;
+  line-height: 1.5rem;
+  font-size: 18px;
+}
+#squiggle-items a{
+  text-decoration: underline;
+}
+
+.bottom-nav{
+  display:flex; 
+  flex-wrap: wrap;
+  background-color: #e7e3e3;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+#bottom-logo{
+  height:45px ;
+  width: 200px;
+  margin: 15px;
+}
+.fa-google-play{
+  color: #000000;
+  font-size: 60px;
+  margin-right: 25px;
+}
+
+.bottom-nav-left{
+  display: flex; 
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width:  350px;
+  font-size: 15px;
+}
+.bottom-nav-mid{
+  display:grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+.bottom-nav-mid a{
+  color: black;
+}
+
+
+.cards-container{
+  display: flex ;
+  flex-wrap: wrap;
+  background-color: #bba3a3;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 2px;
+  padding: 10px;
+}
+
+.card-items{
+  display: flex;
+  background-color: #e15b62;
+  padding: 10px;
+  margin: 5px;
+  height: 60vh;
+  width: 20%;
+  border-radius: 25px;
+}
+
+
+/* @media screen and (max-width:500px) {
+  .navbar{
+      display: none !important;
+  }   
+  #hamburger-icon{
+      display: block;
+  }
+  header{
+      justify-content: space-between;
+  }
+  header ul li{
+      float: left;
+  }
+} */

@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes,Route} from 'react-router-dom'
+import Navbar from './Components/Navbar';
+import Squiggle from './Components/Squiggle';
+import Footer from './Components/Footer';
+import Card from './Components/Card';
+import ArticlePage from './Components/ArticlePage';
+import AdminPanel from './Components/AdminPanel';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path="squiggle" element={<Squiggle/>} />
+        <Route path="footer" element={<Footer/>} />
+        <Route path="card" element={<Card/>} />
+        <Route path="article-page" element={<ArticlePage/>} />
+        <Route path="admin-panel" element={<AdminPanel/>} />
+      </Routes>
+      </>
   );
 }
 
