@@ -1,0 +1,32 @@
+.squiggles{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 5px 20px;
+    padding: 20px; 
+    border-radius: 10px;
+    background-color:rgb(221, 221, 79); 
+  }
+  #squiggle-button{
+    padding:10px; 
+    color: white;
+    font-size: 16px;
+    background-color: #e15b62;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #squiggle-button:hover{
+    background-color: #c72931;
+  }
+
+  #squiggle-items{
+    display: flex; 
+    flex-direction:column;
+    line-height: 1.7rem;
+    font-size: 18px;
+  }
+  #squiggle-items a{
+    text-decoration: underline;
+  }

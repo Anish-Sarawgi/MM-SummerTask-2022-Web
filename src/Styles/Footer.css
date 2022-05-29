@@ -1,0 +1,64 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(36, 32, 32);
+    align-items: center;
+    color: white;
+  }
+  
+  #privacy-policy{
+    margin: 0px 10px;
+  }
+  
+  .fa-brands{
+    color: white;
+    /* padding: 5px; */
+    margin: 6px;
+    font-size: 20px;
+  }
+  .fa-brands:hover{
+    color: royalblue;
+  }
+  
+  .bottom-nav{
+    display:flex; 
+    flex-wrap: wrap;
+    background-color: #e7e3e3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  #bottom-logo{
+    height:45px ;
+    width: 200px;
+    margin: 15px;
+  }
+  .fa-google-play{
+    color: #000000;
+    font-size: 60px;
+    margin-right: 25px;
+  }
+  
+  .bottom-nav-left{
+    display: flex; 
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width:  350px;
+    font-size: 15px;
+  }
+  .bottom-nav-mid{
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.7rem;
+  }
+  
+  .bottom-nav-mid a{
+    color: black;
+  }

@@ -1,4 +1,7 @@
 import React from "react";
+import '../Styles/Navbar.css'
+import { Button } from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
 import { Link } from "react-router-dom";
 import logo from "../Images/Logo/logo.png";
 
@@ -17,7 +20,6 @@ export default function Navbar() {
             <a href="#0">Contact Us</a>
           </li>
         </ul>
-        {/* <img id="hamburger-icon" src="/Icons/hamburger.png" alt="" /> */}
       </header>
       <div className="container">
         <nav className="navbar">
@@ -29,21 +31,18 @@ export default function Navbar() {
                   <li className="navbar-panel-list-items"><Link to="/" >-&gt;  HOME PAGE </Link></li>
                   <li className="navbar-panel-list-items"><Link to="/article-page" >-&gt;  ARTICLE PAGE</Link></li>
                   <li className="navbar-panel-list-items"><Link to="/admin-panel" >-&gt;  ADMIN PANEL</Link></li>
-                  <li className="navbar-panel-list-items"><Link to="/squiggle" >-&gt;  SQUIGGLES</Link></li>
-                  <li className="navbar-panel-list-items"><Link to="/footer" >-&gt;  FOOTER</Link></li>
                 </ul>
             </div>
           </div>
           <hr />
-          <ul className="navbar-list">
+          <div className="navbar-list">
+            <h2 style={{'fontSize':'30px' }}>Filters :</h2>
+          <ul>
             <li>
-              <a href="#0">Home</a>
+              <a href="#0">Trending</a>
             </li>
             <li>
               <a href="#0">Campus</a>
-            </li>
-            <li>
-              <a href="#0">Connect</a>
             </li>
             <li>
               <a href="#0">DD & CWC</a>
@@ -58,9 +57,11 @@ export default function Navbar() {
               <a href="#0">Expressions</a>
             </li>
           </ul>
-          <hr />
+          <input type="text" placeholder="Search article.." style={{'padding':'5px', 'margin':'2px'}}/>
+          <Button variant="contained" color="success" size="small" startIcon={<SearchIcon/>}  />
+          </div>
+          <hr/>
         </nav>
-        {/* <h1>This is Home Page</h1> */}
       </div>
     </>
   );
