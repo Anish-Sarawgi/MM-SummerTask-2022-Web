@@ -1,8 +1,9 @@
 import React from 'react'
 import '../Styles/AdminPanel.css'
-import {Typography , TextField , Button, Stack } from '@mui/material'
-import logo from '../Images/Logo/mm-logo-no-text.png'
-import { Box } from '@mui/system' 
+import {Box, Typography , TextField , Button, Stack } from '@mui/material'
+import { Link } from "react-router-dom";
+
+import logo from '../Images/Logo/mm-logo-no-text.png' 
 import Footer from './Footer'
 
 export default function AdminPanel() {
@@ -20,7 +21,7 @@ export default function AdminPanel() {
         <Stack>
         <TextField label="Username" />
         <TextField label="Password" type='password' />
-        <Button variant='contained' color='primary'>SIGN IN</Button>
+        <Button variant='contained' color='primary'><Link to='/dashboard'>SIGN IN</Link></Button>
         </Stack>
       </Box>
     </Box>

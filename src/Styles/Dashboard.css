@@ -1,0 +1,18 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 221, 221);
+    height: 600px;
+    width: 800px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
